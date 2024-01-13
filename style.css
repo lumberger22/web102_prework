@@ -2,26 +2,52 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #143a3e;
+    color: white;
 }
 
 #tentacles {
-    width: 50px;
+    width: 200px;
+    margin: 0px 5vw;
+    border: 5px solid white;
+    border-radius: 99%;
+    padding: 3vh;
+    background-color: #287179;
+}
+
+#info-bar {
+    text-align: center;
+    padding: 7vh 0px 10vh 0px;
+    border-top: 2px solid #a8b0bc;
+    border-bottom: 2px solid #a8b0bc;
+    font-size: 2.4vh;
+    background-color: #215d63;
+}
+
+#welcome-text {
+    font-size: 2em;
 }
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    padding: 5%;
+    justify-content: center;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    font-size: 2em;
+    background-color: #143a3e;
+}
+
+#stats-header {
+    margin-top: 10vh;
 }
 
 .stats-container {
     display: flex;
     align-items: stretch;
+    background-color: #143a3e;
 }
 
 .stats-container:hover {
@@ -30,7 +56,7 @@ body {
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #db795d;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -61,6 +87,7 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    color:#143a3e
 }
 
 .game-card:hover {
