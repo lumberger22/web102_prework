@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [x] List anything else that you can get done to improve the app functionality!
-*     [x] Added styling to improve visibility and user interaction.
+* [x] Added styling to improve visibility and user interaction.
 
 ## Video Walkthrough
 
@@ -27,7 +27,7 @@ Here's a walkthrough of implemented features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ScreenToGif
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -36,6 +36,10 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- Struggled early on with getting the correct syntax to reference elements
+- Also ran into errors with destruction of objects specifically after creating two separate variables through spread
+- Had to refresh on many of the topics as it had been a while since I'd working with DOM manipulation
 
 ## License
 
