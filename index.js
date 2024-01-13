@@ -163,8 +163,8 @@ const numUnfunded = (GAMES_JSON.filter( (game) => {
 })).length;
 
 // create a string that explains the number of unfunded games using the ternary operator
-const displayStr = `
-    A total of $${ totalRaised.toLocaleString('en-US') } has been raised for ${ GAMES_JSON.length } games. Currently, only ${ numUnfunded === 1 ? "1 game remains" : `${ numUnfunded } games remain`} unfunded. We need your help to fund these amazing games!
+const displayStr = 
+    `A total of $${ totalRaised.toLocaleString('en-US') } has been raised for ${ GAMES_JSON.length } games. Currently, only ${ numUnfunded === 1 ? "1 game remains" : `${ numUnfunded } games remain`} unfunded. We need your help to fund these amazing games!
 `;
 
 // create a new DOM element containing the template string and append it to the description container
@@ -180,12 +180,24 @@ descriptionContainer.appendChild(unfundedString);
 const firstGameContainer = document.getElementById("first-game");
 const secondGameContainer = document.getElementById("second-game");
 
-const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
+const sortedGames = GAMES_JSON.sort( (item1, item2) => {
     return item2.pledged - item1.pledged;
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [mostFundedGame, secondFundedGame, ...rest] = sortedGames;
+const { name, desc, pl, goal, bkrs, img } = mostFundedGame;
+const { name2, desc2, pl2, goal2, bkrs2, img2 } = secondFundedGame;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const mostFundedName = document.createElement("p");
+mostFundedName.innerText = `${ name }`;
+const firstGame = document.getElementById("first-game");
+firstGame.appendChild(mostFundedName);
 
 // do the same for the runner up item
+const secondFundedName = document.createElement("p");
+// Wanted to do this but could not get it to work -> secondFundedName.innerText = `${ name2 }`;
+secondFundedName.innerText = `${ secondFundedGame.name }`;
+const secondGame = document.getElementById("second-game");
+secondGame.appendChild(secondFundedName);
