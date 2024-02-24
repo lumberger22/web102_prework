@@ -24,6 +24,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
+*If GIFs don't open, click on GIF file above*
+
 <img src='"C:\Users\lucas\dev\CodePath\web102_prework\walkthrough.gif"' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='""C:\Users\lucas\dev\CodePath\web102_prework\walkthrough_1.gif""' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
